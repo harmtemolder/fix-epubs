@@ -31,8 +31,8 @@ def findAndReplace(inputEpub, epubName, find, replace):
             outputEpub.writestr(file, inputFile)
     outputEpub.close()
 
-epubName = "Covey, Stephen R. - The 7 Habits of Highly Effective People.epub"
+epubName = "refer-to-epub-filename-here"
 epubZip = openEpubZip(epubName)
-findAndReplace(epubZip, epubName, ' <i class="calibre3">THE SEVEN HABITS OF HIGHLY EFFECTIVE PEOPLE                                                                        Brought to you by FlyHeart</i> ', "")
+findAndReplace(epubZip, epubName, "enter text to be replaced here", "and what it needs to be replaced with here")
 epubZip.close()
 print("ended")
